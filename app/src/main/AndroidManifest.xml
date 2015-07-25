@@ -28,6 +28,7 @@
             android:name="com.spkdroid.bridge.check.LoginAuth"
             android:label="@string/app_name" >
             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
                 </intent-filter>
         </activity>
@@ -35,7 +36,6 @@
             android:name=".IdentityLauncher"
             android:label="@string/title_activity_identity_launcher" >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
                 </intent-filter>
         </activity>
@@ -76,22 +76,6 @@
             android:name=".dialog.AllEvent"
             android:label="@string/title_activity_view_grades"
             android:theme="@style/Theme.AppCompat.Dialog" >
-        </activity>
-        <activity
-            android:name="com.brainwave.main.MainActivity"
-            android:label="@string/app_name" >
-        </activity>
-        <activity android:name="com.brainwave.main.GmailActivity" >
-        </activity>
-        <activity android:name="com.brainwave.main.YahooActivity" >
-        </activity>
-        <activity android:name="com.brainwave.main.AddAccountActivity" >
-        </activity>
-        <activity android:name="com.brainwave.main.EmailContentActivity" >
-        </activity>
-        <activity android:name="com.brainwave.main.ComposeEmailActivity" >
-        </activity>
-        <activity android:name="com.brainwave.main.MainEmailActivity" >
         </activity>
         <activity
             android:name="com.spkdroid.maps.MapView"

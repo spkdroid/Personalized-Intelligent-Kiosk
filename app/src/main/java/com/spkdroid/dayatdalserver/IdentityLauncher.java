@@ -8,14 +8,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import com.brainwave.main.AddAccountActivity;
 import com.spkdroid.dayatdalserver.dialog.AllEvent;
 import com.spkdroid.faculty.FacultyInformation;
 import com.spkdroid.maps.MapView;
 import com.spkdroid.newsfeed.NewsFeed;
 import com.spkdroid.newsfeed.bridge.Newsbridge;
 
-import de.hdodenhof.circleimageview.CircleImageView;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -59,10 +57,8 @@ public class IdentityLauncher extends Activity implements OnClickListener,
 	ProgressDialog pr;
 	ImageView cv;
 	ListView kiosklist;
-
 	private ArrayAdapter<String> adapter;
 	private List<String> liste;
-
 	static String[] values;
 
 	@Override
@@ -99,37 +95,36 @@ public class IdentityLauncher extends Activity implements OnClickListener,
 		
 		
 		values = new String[] { "Time Table", "View Grades",
-				"Personalized News Feed","Personalized Event","Party",
+				"Personalized News Feed","Personalized Event","Party @ Dal",
 				"Help","Maps","Faculty","Logout" };
 
+		Integer[] imageId = {
+				R.drawable.timetable,
+				R.drawable.student,
+				R.drawable.news,
+				R.drawable.student,
+				R.drawable.beer,
+				R.drawable.cloud,
+				R.drawable.help,
+				R.drawable.phone2,
+                R.drawable.phone1
+		};
+/*
 		final ArrayList<String> list = new ArrayList<String>();
 		for (int i = 0; i < values.length; ++i) {
 			list.add(values[i]);
 		}
+*/
+        CustomList adapter = new CustomList(IdentityLauncher.this, values, imageId);
+        kiosklist.setAdapter(adapter);
+        kiosklist.setOnItemClickListener(this);
+     //   kiosklist.setOnClickListener(this);
+/*
 		final StableArrayAdapter adapter = new StableArrayAdapter(this,
 				android.R.layout.simple_list_item_1, list);
 		kiosklist.setAdapter(adapter);
-
 		kiosklist.setOnItemClickListener(this);
-
-		/*
-		 * TimeTable=(Button)findViewById(R.id.viewtimetable);
-		 * ViewGrades=(Button)findViewById(R.id.grades);
-		 * News=(Button)findViewById(R.id.news);
-		 * Party=(Button)findViewById(R.id.party);
-		 * CalEven=(Button)findViewById(R.id.calevedet);
-		 * Maiyl=(Button)findViewById(R.id.gmail);
-		 * help=(Button)findViewById(R.id.dalhelp);
-		 */
-		// rpof=(ImageView)findViewById(R.id.rgs);
-		// rpof.setOnClickListener(this);
-		/*
-		 * TimeTable.setOnClickListener(this);
-		 * ViewGrades.setOnClickListener(this); News.setOnClickListener(this);
-		 * Party.setOnClickListener(this); CalEven.setOnClickListener(this);
-		 * Maiyl.setOnClickListener(this); help.setOnClickListener(this);
-		 * //checkImg();
-		 */
+*/
 	}
 	
 	/*
