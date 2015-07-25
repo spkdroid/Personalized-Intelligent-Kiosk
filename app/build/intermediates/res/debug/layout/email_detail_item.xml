@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@layout/subject_header_gradient"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dip"
+    android:paddingBottom="5dip"
+    android:orientation="vertical">
+        <TextView 
+            android:id="@+id/subjectDetailView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="5dip"
+            android:text="Subject"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+                <TextView style="?android:listSeparatorTextViewStyle" 
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            
+            />
+        
+        <RelativeLayout
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:text="From:"
+                android:id="@+id/fromTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                />
+            <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fromDetailView"
+            android:text="From"
+            android:layout_toRightOf="@id/fromTextView"
+            android:layout_alignParentTop="true"
+            android:editable="false"
+            android:textSize="12sp"
+            />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:text="To:"
+                android:id="@+id/toTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                />
+            <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toDetailView"
+            android:text="To"
+            android:layout_toRightOf="@id/toTextView"
+            android:layout_alignParentTop="true"
+            android:textSize="12sp"
+            android:editable="false"
+            android:layout_marginLeft="15dp"
+            />
+        </RelativeLayout>
+	</LinearLayout>
+
+</LinearLayout>
+<!-- From: file:/S:/UbiComp/Kiosk/Personalized-Intelligent-Kiosk/app/src/main/res/layout/email_detail_item.xml -->

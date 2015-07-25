@@ -21,6 +21,7 @@ import android.os.Bundle;
  *  bluetooth availablilty and will give an alert message. If the device is not supported the application will
  *  
  *  not launch.
+ *
  */
 
 

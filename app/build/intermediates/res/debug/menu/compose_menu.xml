@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/cancelMenu"
+        android:title="Cancel" />
+    <item android:id="@+id/sendMenu"
+        android:title="Send"/>
+    <item android:id="@+id/saveAsDraftMenu"
+        android:title="Save as draft" />
+    <item android:id="@+id/addAttachmentMenu"
+        android:title="Add Attachment" />
+
+</menu>
+<!-- From: file:/S:/UbiComp/Kiosk/Personalized-Intelligent-Kiosk/app/src/main/res/menu/compose_menu.xml -->

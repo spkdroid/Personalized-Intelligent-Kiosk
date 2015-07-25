@@ -1,0 +1,160 @@
+
+<!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.spkdroid.dayatdalserver.IdentityLauncher" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <TextView
+        android:id="@+id/reeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="38dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/viewtimetable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_below="@+id/reeed"
+        android:layout_marginTop="26dp"
+        android:text="Time Table" />
+
+    <Button
+        android:id="@+id/grades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/viewtimetable"
+        android:layout_alignRight="@+id/viewtimetable"
+        android:layout_below="@+id/viewtimetable"
+        android:text="View Grades" />
+
+    <Button
+        android:id="@+id/news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/grades"
+        android:layout_alignRight="@+id/grades"
+        android:layout_below="@+id/grades"
+        android:text="Personalized News Feed" />
+
+    <Button
+        android:id="@+id/party"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/news"
+        android:layout_alignRight="@+id/news"
+        android:layout_below="@+id/news"
+        android:text="Party Details" />
+
+    <Button
+        android:id="@+id/calevedet"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/party"
+        android:layout_alignRight="@+id/party"
+        android:layout_below="@+id/party"
+        android:text="Calander Event" />
+
+    <Button
+        android:id="@+id/dalhelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/calevedet"
+        android:layout_below="@+id/calevedet"
+        android:text="Help" />
+
+    
+
+    <Button
+        android:id="@+id/gmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dalhelp"
+        android:layout_below="@+id/dalhelp"
+        android:text="Logout" />
+
+    <ImageView
+        android:id="@+id/rgs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/gmail"
+        android:layout_alignRight="@+id/calevedet"
+        android:layout_alignTop="@+id/dalhelp"
+        android:layout_toRightOf="@+id/gmail"
+        android:src="@drawable/ic_launcher" />
+
+!
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="de.hdodenhof.circleimageview.sample.MainActivity$PlaceholderFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.57"
+        android:background="@color/light"
+        android:padding="@dimen/base_padding" >
+
+        <TextView
+            android:id="@+id/idtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="TextView" />
+
+        <ImageView
+            android:id="@+id/indeximg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/idtext"
+            android:src="@drawable/ic_launcher" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.03"
+        android:background="@color/dark"
+        android:padding="@dimen/base_padding"
+         >
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" 
+            android:background="#FFFFFF"
+            >
+
+        </ListView>
+
+    </RelativeLayout>
+</LinearLayout><!-- From: file:/S:/UbiComp/Kiosk/Personalized-Intelligent-Kiosk/app/src/main/res/layout/activity_identity_launcher.xml -->

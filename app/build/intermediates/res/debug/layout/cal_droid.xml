@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/seeevent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select the date to see the Event" />
+
+    <CalendarView
+        android:id="@+id/ssda"
+        android:layout_width="match_parent"
+        android:layout_height="204dp"
+        android:layout_weight="0.23" />
+
+</LinearLayout><!-- From: file:/S:/UbiComp/Kiosk/Personalized-Intelligent-Kiosk/app/src/main/res/layout/cal_droid.xml -->

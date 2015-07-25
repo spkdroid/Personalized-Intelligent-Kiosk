@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootGmail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:padding="5dp"
+    android:background="#000000"
+   >
+
+    <CheckBox android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true" 
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+    />
+    
+    <TextView
+        android:id="@+id/subject_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/check"
+        android:text="Re: Mustansar Saeed"
+        android:layout_marginTop="5dp"
+        android:textSize="14dp"
+    />
+
+    <TextView
+        android:id="@+id/from_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/subject_content"
+        android:layout_below="@id/subject_content"
+        android:text="From: Content"
+        android:textSize="10dp"
+        />
+"
+
+	<TextView 
+	    android:id="@+id/time_content"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Feb 6"
+	    android:textSize="10dp"
+	    android:layout_alignBottom="@id/from_content"
+	    android:layout_alignParentRight="true"
+	    />
+</RelativeLayout>
+<!-- From: file:/S:/UbiComp/Kiosk/Personalized-Intelligent-Kiosk/app/src/main/res/layout/gmail_list_layout.xml -->
