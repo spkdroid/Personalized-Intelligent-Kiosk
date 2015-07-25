@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Ramkumar Velmurugan\Desktop\Personalized\Day-at-dal-Kiosk-master\app\libs\volley.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="04b23f428af24a3b67bb50f584349e24d39c775a">
+        <dex dex="C:\Users\Ramkumar Velmurugan\Desktop\Personalized\Day-at-dal-Kiosk-master\app\build\intermediates\pre-dexed\debug\volley-1b259d243b0f06eddb10f6a8f4b24d0379b7a471.jar" />
+    </item>
+    <item
+        jar="C:\Users\Ramkumar Velmurugan\Desktop\Personalized\Day-at-dal-Kiosk-master\app\libs\activation.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d1257cbff6faa44c1f325ae0d9413522d4644383">
+        <dex dex="C:\Users\Ramkumar Velmurugan\Desktop\Personalized\Day-at-dal-Kiosk-master\app\build\intermediates\pre-dexed\debug\activation-9fae2a1d6ef023f40feb4aef92739285888485f9.jar" />
+    </item>
+    <item
+        jar="C:\Users\Ramkumar Velmurugan\Desktop\Personalized\Day-at-dal-Kiosk-master\app\libs\additionnal.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="bd9e8dc422bb8c8405359947fe9f4282b49f57f4">
+        <dex dex="C:\Users\Ramkumar Velmurugan\Desktop\Personalized\Day-at-dal-Kiosk-master\app\build\intermediates\pre-dexed\debug\additionnal-c59fba63e0edd60d34f94f1b11530a37c1cc1fd2.jar" />
+    </item>
+    <item
+        jar="C:\Users\Ramkumar Velmurugan\Desktop\Personalized\Day-at-dal-Kiosk-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="C:\Users\Ramkumar Velmurugan\Desktop\Personalized\Day-at-dal-Kiosk-master\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-70143802194c8871e32bb3011a2f83cce03aa69c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Ramkumar Velmurugan\Desktop\Personalized\Day-at-dal-Kiosk-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="C:\Users\Ramkumar Velmurugan\Desktop\Personalized\Day-at-dal-Kiosk-master\app\build\intermediates\pre-dexed\debug\classes-546deb13d55b2577e8179faa6198f44af5a2af21.jar" />
+    </item>
+    <item
+        jar="C:\Users\Ramkumar Velmurugan\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="C:\Users\Ramkumar Velmurugan\Desktop\Personalized\Day-at-dal-Kiosk-master\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-a5d25c8fe7398afcb97d500d69479a8a225c5830.jar" />
+    </item>
+    <item
+        jar="C:\Users\Ramkumar Velmurugan\Desktop\Personalized\Day-at-dal-Kiosk-master\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="C:\Users\Ramkumar Velmurugan\Desktop\Personalized\Day-at-dal-Kiosk-master\app\build\intermediates\pre-dexed\debug\classes-8014c5f19a55e2ab1f3c2a6ca63b2587bb33b14b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Ramkumar Velmurugan\Desktop\Personalized\Day-at-dal-Kiosk-master\app\libs\mail.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="428e267abff0d10802ccde86b915da2c20471160">
+        <dex dex="C:\Users\Ramkumar Velmurugan\Desktop\Personalized\Day-at-dal-Kiosk-master\app\build\intermediates\pre-dexed\debug\mail-39966e8497ac808261e58c1d1493e067c04e03d7.jar" />
+    </item>
+
+</items>
