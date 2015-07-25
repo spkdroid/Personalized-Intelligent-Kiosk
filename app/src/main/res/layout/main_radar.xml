@@ -1,0 +1,56 @@
+<com.skyfishjy.ripplebackground.sample.RippleBackground
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/content"
+    app:rb_color="#0099CC"
+    app:rb_radius="32dp"
+    app:rb_rippleAmount="6"
+    app:rb_duration="3000"
+    app:rb_scale="6"
+    >
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/centerImage"
+        android:src="@drawable/phone1"/>
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:id="@+id/foundDevice"
+        android:layout_above="@id/centerImage"
+        android:layout_marginBottom="32dp"
+        android:layout_toLeftOf="@id/centerImage"
+        android:layout_marginRight="6dp"
+        android:src="@drawable/phone2"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/readkate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/app_name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/foundDevice"
+        android:layout_below="@+id/readkate"
+        android:layout_marginTop="16dp"
+       />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/key"
+        android:layout_below="@+id/key"
+       />
+
+</com.skyfishjy.ripplebackground.sample.RippleBackground>

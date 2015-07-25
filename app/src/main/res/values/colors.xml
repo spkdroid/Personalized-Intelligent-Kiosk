@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primary">#551A8B</color>
+    <color name="primary_dark">#551A8B</color>
+    <color name="accent">#ffc400</color>
+    <color name="text_primary">#E0F0FF</color>
+    <color name="text_secondary">#E0F0FF</color>
+    <color name="photo_tint">#88101010</color>
+    <color name="genre">#666666</color>
+    <color name="year">#888888</color>
+    <color name="list_divider">#d9d9d9</color>
+    <color name="list_row_start_color">#ffffff</color>
+    <color name="list_row_end_color">#ffffff</color>
+    <color name="list_row_hover_start_color">#ebeef0</color>
+    <color name="list_row_hover_end_color">#ebeef0</color>
+    <color name="light">#E5E4E2 </color>
+    <color name="red">#FF0000</color>
+    <color name="white">#ffffff</color>
+    <color name="rippelColor">#0099CC</color>
+    
+    <color name="dark">#FF222222</color>
+</resources>

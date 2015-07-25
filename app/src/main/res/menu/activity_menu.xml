@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item 
+	    android:id="@+id/refresh"
+	    android:title="Refresh" />"
+
+	<item 
+		    android:id="@+id/compose"
+		    android:title="Compose" />
+	
+	<item 
+		    android:id="@+id/goToLabels"
+		    android:title="Go to labels" />
+	
+	<item 
+		    android:id="@+id/settings"
+		    android:title="Settings" />
+</menu>

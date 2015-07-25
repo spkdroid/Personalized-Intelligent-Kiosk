@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/grades"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Grades" />
+
+    <Button
+        android:id="@+id/timetable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Time Table" />
+
+    <Button
+        android:id="@+id/newsfeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="News Feed" />
+
+    <Button
+        android:id="@+id/partytimetable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Party @dal" />
+
+</LinearLayout>

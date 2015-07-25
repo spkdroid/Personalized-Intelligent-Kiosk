@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.spkdroid.dayatdalserver"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="14"/>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.example.samplelist.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.spkdroid.bridge.check.LoginAuth"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+        </activity>
+        <activity
+            android:name=".IdentityLauncher"
+            android:label="@string/title_activity_identity_launcher" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+        </activity>
+        <activity
+            android:name=".TimeTable"
+            android:label="@string/title_activity_time_table" >
+        </activity>
+        <activity
+            android:name=".ViewGrades"
+            android:label="@string/title_activity_view_grades" >
+        </activity>
+        <activity
+            android:name="com.spkdroid.newsfeed.NewsFeed"
+            android:label="@string/title_activity_view_grades" >
+        </activity>
+        <activity
+            android:name="com.spkdroid.newsfeed.Research"
+            android:label="@string/title_activity_view_grades" >
+        </activity>
+        <activity
+            android:name="com.spkdroid.newsfeed.Sports"
+            android:label="@string/title_activity_view_grades" >
+        </activity>
+        <activity
+            android:name="com.spkdroid.newsfeed.StudentLife"
+            android:label="@string/title_activity_view_grades" >
+        </activity>
+        <activity
+            android:name=".Calander"
+            android:label="@string/title_activity_view_grades" >
+        </activity>
+        <activity
+            android:name=".dialog.DayInfo"
+            android:label="@string/title_activity_view_grades"
+            android:theme="@style/Theme.AppCompat.Dialog" >
+        </activity>
+        <activity
+            android:name=".dialog.AllEvent"
+            android:label="@string/title_activity_view_grades"
+            android:theme="@style/Theme.AppCompat.Dialog" >
+        </activity>
+        <activity
+            android:name="com.brainwave.main.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name="com.brainwave.main.GmailActivity" >
+        </activity>
+        <activity android:name="com.brainwave.main.YahooActivity" >
+        </activity>
+        <activity android:name="com.brainwave.main.AddAccountActivity" >
+        </activity>
+        <activity android:name="com.brainwave.main.EmailContentActivity" >
+        </activity>
+        <activity android:name="com.brainwave.main.ComposeEmailActivity" >
+        </activity>
+        <activity android:name="com.brainwave.main.MainEmailActivity" >
+        </activity>
+        <activity
+            android:name="com.spkdroid.maps.MapView"
+            android:label="@string/title_activity_help" >
+        </activity>
+       
+         <activity
+            android:name="com.spkdroid.faculty.FacultyInformation"
+            android:label="@string/title_activity_help" >
+        </activity>
+       
+        
+         <activity
+            android:name=".HelpActivity"
+            android:label="@string/title_activity_help" >
+        </activity>
+        
+        <activity
+            android:name="com.spkdroid.newsfeed.bridge.Newsbridge"
+            android:label="@string/title_activity_help" >
+        </activity>
+    </application>
+</manifest>

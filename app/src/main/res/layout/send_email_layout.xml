@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:padding="10dp">
+    
+    
+    <Spinner android:id="@+id/fromView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    
+    <EditText android:id="@+id/toView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="To" 
+        android:layout_marginTop="2dp"
+        android:text="m.mustansar.saeed@gmail.com"
+        />"
+    
+    <EditText android:id="@+id/subjectView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Subject" 
+        android:layout_marginTop="2dp"
+        android:text="Testing GoMail"
+        />
+
+    <LinearLayout android:id="@+id/attachmentContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="2dp">        
+    </LinearLayout>
+    <EditText android:id="@+id/bodyView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Body View" 
+        android:layout_weight="1"
+        android:layout_marginTop="2dp"
+        android:gravity="top"
+        android:text="Testing Message"
+        />
+</LinearLayout>
