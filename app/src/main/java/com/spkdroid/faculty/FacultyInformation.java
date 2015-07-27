@@ -16,6 +16,10 @@ import android.widget.ListView;
  * 
  * @author Prasna Elangovan
  *
+ * when the user click the faculty infomation in the kiosk. The Application will list the
+ *
+ * faculty information in an ListView
+ *
  */
 
 public class FacultyInformation extends Activity{
@@ -27,7 +31,12 @@ public class FacultyInformation extends Activity{
 	    setContentView(R.layout.xfiles);
 	
 	    faculty=(ListView)findViewById(R.id.xfileslist);
-	    
+
+
+		/*
+		* Faculty Information are stored in the Values array
+		 */
+
 	    String[] values = new String[] { 
 	    		"Dr. A. Rau-Chaplin \n 902-494-2732 \n arc@cs.dal.ca\n",
 	    		"Dr. Christian Blouin \n 902-494-6702 \n cblouin@cs.dal.ca \n",
@@ -46,7 +55,7 @@ public class FacultyInformation extends Activity{
 	    		"Dr. Srinivas Sampalli \n 902-494-1657 \n srini@cs.dal.ca \n"
 	    };
 
-
+// Array Adapter to List the Values
 ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
 android.R.layout.simple_list_item_1, android.R.id.text1, values);
 

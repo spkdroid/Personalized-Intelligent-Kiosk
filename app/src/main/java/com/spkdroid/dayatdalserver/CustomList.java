@@ -8,6 +8,14 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+
+/**
+ *  File Name: CustomList.java
+ *
+ *  This is the List item class that describe what are the content that need to be placed inside the Newsfeed Listview
+ *
+ */
+
 public class CustomList extends ArrayAdapter<String>{
 
     private final Activity context;
@@ -21,6 +29,13 @@ public class CustomList extends ArrayAdapter<String>{
         this.imageId = imageId;
 
     }
+
+    /**
+     *
+     * Each row of the text and image of the news feed are mapped in this function
+     *
+     */
+
     @Override
     public View getView(int position, View view, ViewGroup parent) {
         LayoutInflater inflater = context.getLayoutInflater();

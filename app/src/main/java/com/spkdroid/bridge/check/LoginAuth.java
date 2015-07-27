@@ -66,7 +66,9 @@ public class LoginAuth extends Activity{
 		{
 			flag1=true;
 		}
-		
+        /**
+         * when the flag1 is true then the MainActivity class is lanunched. The MainActivity is the Main Screen of the Kiosk
+         */
 		
 		if(flag1==true)
 		{

@@ -19,11 +19,8 @@ import android.os.Bundle;
 
 public class MapView extends Activity
 {
-	
 	protected void onCreate(Bundle savedInstanceState) {
 	   super.onCreate(savedInstanceState);
 	   setContentView(R.layout.remote);
-	//   zz=(ZoomableImageView) findViewById(R.id.zoomimg);
-	 //  zz.setImageResource(R.drawable.maps);
 	}
 }

@@ -41,7 +41,8 @@ public class Calander extends Activity {
 		setContentView(R.layout.cal_droid);
 	
 	 f=getIntent().getExtras().getString("ram");
-	
+
+     // Linking the Calendar with the class. This is the built in class.
 	 cal=(CalendarView)findViewById(R.id.ssda);
 		cal.setOnDateChangeListener(new OnDateChangeListener(){
 
@@ -69,8 +70,12 @@ public class Calander extends Activity {
 				}
 				String r=year+"-"+c_mon+"-"+c_day;
 			//	args.putString("date",year+"-"+c_mon+"-"+c_day);
-			Toast.makeText(getApplicationContext(),f+r,Toast.LENGTH_LONG).show();
-Intent i=new Intent(getApplicationContext(),DayInfo.class);
+
+
+				Toast.makeText(getApplicationContext(),f+r,Toast.LENGTH_LONG).show();
+
+				// DayInfo is a simple dialog activity that list the events based on the calendar that has been chosen in this class
+				Intent i=new Intent(getApplicationContext(),DayInfo.class);
 i.putExtra("key",f);
 i.putExtra("value",r);
 startActivity(i);

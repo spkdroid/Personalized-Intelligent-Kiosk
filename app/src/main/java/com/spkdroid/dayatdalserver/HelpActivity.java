@@ -24,7 +24,9 @@ public class HelpActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_help);
-	
+
+
+    // The Help information are loaded from the HTML file that has been loaded in the raw folder. Using the webview we are loading to the screen
 	wv=(WebView) findViewById(R.id.prasna);
 	wv.loadUrl("file:///android_res/raw/dal.html");
 	

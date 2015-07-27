@@ -19,7 +19,11 @@ import android.widget.TextView;
  *
  * Filename: ViewGrades.java
  * 
- * This is used to view the grade information of the user.
+ * This is used to view the grade information of the user. The user id of the user is appended to this URL
+ *
+ * http://www.spkdroid.com/merlin/grades.php?login_id=<user id>
+ *
+ *   The server will respond back with the grade information.
  *
  */
 
@@ -42,9 +46,8 @@ public class ViewGrades extends Activity {
 		setContentView(R.layout.activity_view_grades);
 		studentid=getIntent().getExtras().getString("Ramkumar");
 		tv=(TextView)findViewById(R.id.gradesresult);
-	
+
 		/*
-		 * 
 		 * when the user name is passed via the url string below
 		 * 
 		 * The server replies with the grade information.
@@ -103,6 +106,12 @@ public class ViewGrades extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+
+    /**
+     *
+     * When the BackButton is pressed the current Activity will be killed
+     *
+     */
 	
 	public void onBackPressed()
 	{
