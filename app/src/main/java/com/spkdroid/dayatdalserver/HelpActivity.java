@@ -29,7 +29,10 @@ public class HelpActivity extends Activity {
     // The Help information are loaded from the HTML file that has been loaded in the raw folder. Using the webview we are loading to the screen
 	wv=(WebView) findViewById(R.id.prasna);
 	wv.loadUrl("file:///android_res/raw/dal.html");
-	
+		wv.getSettings().setLoadWithOverviewMode(true);
+		wv.getSettings().setUseWideViewPort(true);
+
+
 	}
 
 	@Override

@@ -56,7 +56,9 @@ public class AllEvent extends  Activity implements OnItemClickListener {
 	private static String url;
 	public File file;
 	public ProgressBar progressBarSearch;
-	  
+
+
+	// Variable that will link the JSON Response from the server
 	private static final String TAG_CONTACTS = "data";
 	private static final String TAG_ID = "event_id";
 	private static final String TAG_NAME = "event_name";
@@ -100,7 +102,9 @@ public class AllEvent extends  Activity implements OnItemClickListener {
 		lv.setOnItemClickListener(this);
 		new GetContacts().execute();
 	}
-	
+
+
+	// Async Task in the Background
 	
 	private class GetContacts extends AsyncTask<Void, Void, Void> {
 
@@ -194,45 +198,22 @@ public class AllEvent extends  Activity implements OnItemClickListener {
 	}
 
 
+
+
+	// this method is launched when the list item is clicked
+
 	@Override
 	public void onItemClick(AdapterView<?> parent, View view, int position,
 			long id) {
 		// TODO Auto-generated method stub
-		/*
-		 * 
-		 * private static final String TAG_CONTACTS = "data";
-	private static final String TAG_ID = "event_id";
-	private static final String TAG_NAME = "event_name";
-	private static final String TAG_EMAIL = "event_school";
-	private static final String TAG_SIZE="event_time";
-	private static final String TAG_DURATION="event_date";
-	private static final String TAG_DESC="event_desc";
-	private static final String TAG_LOCATION="event_location";
-		 * 
-		 *  TAG_EMAIL,TAG_NAME,TAG_ID,TAG_DURATION,TAG_LOCATION,TAG_DESC,TAG_SIZE}, 
-new int[] { R.id.email,R.id.name,R.id.size,R.id.duration,R.id.location,R.id.description,R.id.time}
-		 * 
-		 * 
-		 */
-		
-		
-		
+
 		String name = ((TextView) view.findViewById(R.id.name)).getText().toString();
 		String date = ((TextView) view.findViewById(R.id.duration)).getText().toString();
 		String type = ((TextView) view.findViewById(R.id.location)).getText().toString();
 		String time = ((TextView) view.findViewById(R.id.time)).getText().toString();
 		String summary = ((TextView) view.findViewById(R.id.description)).getText().toString();
         String event_id=((TextView) view.findViewById(R.id.size)).getText().toString();
-	
-        /*
-        Toast.makeText(getActivity(),name,Toast.LENGTH_LONG).show();
-        Toast.makeText(getActivity(),date,Toast.LENGTH_LONG).show();
-        Toast.makeText(getActivity(),type,Toast.LENGTH_LONG).show();
-        Toast.makeText(getActivity(),time,Toast.LENGTH_LONG).show();
-        Toast.makeText(getActivity(),summary,Toast.LENGTH_LONG).show();
-        Toast.makeText(getActivity(),event_id,Toast.LENGTH_LONG).show();
-        */
-        
+
         new AlertDialog.Builder(this)
         .setIcon(R.drawable.ic_launcher)
         .setTitle(name)

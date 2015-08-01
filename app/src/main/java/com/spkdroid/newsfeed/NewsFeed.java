@@ -102,12 +102,6 @@ public class NewsFeed  extends  Activity implements OnItemClickListener
 	                                movie.setYear(obj.getString("date"));
 	                                movie.setDescription(obj.getString("description"));
 	                                movie.setUrl(obj.getString("url"));
-	                                // Genre is json array
-//	                                JSONArray genreArry = obj.getJSONArray("genre");
-	  //                              ArrayList<String> genre = new ArrayList<String>();
-	    //                            for (int j = 0; j < genreArry.length(); j++) {
-	      //                              genre.add((String) genreArry.get(j));
-	        //                        }
 	                                movie.setGenre(obj.getString("type"));
 	                                // adding movie to movies array
 	                                movieList.add(movie);
@@ -153,11 +147,6 @@ public class NewsFeed  extends  Activity implements OnItemClickListener
 	    alert_url=((TextView)view.findViewById(R.id.url)).getText().toString();
 		alert_description=((TextView)view.findViewById(R.id.description)).getText().toString();
        	
-		
-	//	Toast.makeText(getActivity(),alert_title,Toast.LENGTH_LONG).show();
-	//	Toast.makeText(getActivity(),alert_url,Toast.LENGTH_LONG).show();
-	//	Toast.makeText(getActivity(),alert_description,Toast.LENGTH_LONG).show();
-		
 		  new AlertDialog.Builder(NewsFeed.this)
 	        .setIcon(R.drawable.ic_launcher)
 	        .setTitle(alert_title)

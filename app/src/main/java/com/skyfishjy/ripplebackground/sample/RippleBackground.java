@@ -46,6 +46,11 @@ import com.spkdroid.dayatdalserver.R;
 
 /**
  * Created by fyu on 11/3/14.
+ *
+ * This is a library file that is used to show the ripple effect in the screen
+ *
+ *
+ *
  */
 
 public class RippleBackground extends RelativeLayout{

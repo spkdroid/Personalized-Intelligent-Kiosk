@@ -97,7 +97,7 @@ public class TimeTable extends Activity {
             protected void onPostExecute(Void result) {
                 super.onPostExecute(result);
                 pr.dismiss();
-
+// Arrange the Time Table in an order in the screen
                 if (tokenresult != null) {
                     r = r + tokenresult + "\n";
                 }

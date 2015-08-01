@@ -12,7 +12,9 @@
         android:id="@+id/time_table_details"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:text="@string/hello_world"
+        android:textSize="40dp"
+        />
 
 </RelativeLayout>
 <!-- From: file:/S:/UbiComp/Kiosk/Personalized-Intelligent-Kiosk/app/src/main/res/layout/activity_time_table.xml -->

@@ -18,6 +18,19 @@ import android.widget.TextView;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
 import com.spkdroid.dayatdalserver.R;
+
+/**
+ *
+ *
+ * Filename: CustomListAdpter.java
+ *
+ * This is a list item class that is used to arrange the list item. This just a pojo class that contains
+ *
+ * the blueprint of the list item.
+ *
+ *
+ *
+ */
  
 public class CustomListAdapter extends BaseAdapter {
     private Activity activity;

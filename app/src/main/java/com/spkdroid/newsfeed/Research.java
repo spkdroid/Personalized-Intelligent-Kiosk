@@ -54,6 +54,7 @@ public class Research  extends  Activity implements OnItemClickListener
 {
 
 	  private static final String TAG = "FEED";	  
+	// the webservice link to fetch the news information
 	private static final String url = "http://www.spkdroid.com/webapp/newresearch.php";
     private ProgressDialog pDialog;
     private List<Movie> movieList = new ArrayList<Movie>();
@@ -76,8 +77,10 @@ public class Research  extends  Activity implements OnItemClickListener
 	        // Showing progress dialog before making http request
 	        pDialog.setMessage("Loading...");
 	        pDialog.show();
-		
-	        JsonArrayRequest movieReq = new JsonArrayRequest(url,
+
+		// the movieReq and movie are the news feed information that added into the movieList which can be loaded into listview
+
+		JsonArrayRequest movieReq = new JsonArrayRequest(url,
 	                new Response.Listener<JSONArray>() {
 	                    @Override
 	                    public void onResponse(JSONArray response) {
@@ -96,14 +99,7 @@ public class Research  extends  Activity implements OnItemClickListener
 	                                movie.setYear(obj.getString("date"));
 	                                movie.setDescription(obj.getString("description"));
 	                                movie.setUrl(obj.getString("url"));
-	                                // Genre is json array
-//	                                JSONArray genreArry = obj.getJSONArray("genre");
-	  //                              ArrayList<String> genre = new ArrayList<String>();
-	    //                            for (int j = 0; j < genreArry.length(); j++) {
-	      //                              genre.add((String) genreArry.get(j));
-	        //                        }
 	                                movie.setGenre(obj.getString("type"));
-	                                // adding movie to movies array
 	                                movieList.add(movie);
 	                            } catch (JSONException e) {
 	                                e.printStackTrace();
@@ -136,6 +132,8 @@ public class Research  extends  Activity implements OnItemClickListener
         }
     }
 
+	// shows the alertbox that shows a dialog that will shows the information
+
 	@Override
 	public void onItemClick(AdapterView<?> parent, View view, int position,
 			long id) {
@@ -145,12 +143,6 @@ public class Research  extends  Activity implements OnItemClickListener
 		alert_title=((TextView)view.findViewById(R.id.title)).getText().toString();
 	    alert_url=((TextView)view.findViewById(R.id.url)).getText().toString();
 		alert_description=((TextView)view.findViewById(R.id.description)).getText().toString();
-       	
-		
-	//	Toast.makeText(getActivity(),alert_title,Toast.LENGTH_LONG).show();
-	//	Toast.makeText(getActivity(),alert_url,Toast.LENGTH_LONG).show();
-	//	Toast.makeText(getActivity(),alert_description,Toast.LENGTH_LONG).show();
-		
 		  new AlertDialog.Builder(this)
 	        .setIcon(R.drawable.ic_launcher)
 	        .setTitle(alert_title)

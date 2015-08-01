@@ -14,7 +14,12 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.utils.URLEncodedUtils;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
-
+/**
+ * Filename: ServiceHandler.java
+ *
+ * This is a library file that is used to convert the json response to string.
+ *
+ */
 public class ServiceHandler {
 
 	static String response = null;

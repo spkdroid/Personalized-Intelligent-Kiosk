@@ -32,6 +32,7 @@ public class LoginAuth extends Activity{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.server_start);
 
+		// Reading the Bluetooth Adapter
 		BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
 
 		

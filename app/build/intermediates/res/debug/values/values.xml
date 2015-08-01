@@ -353,6 +353,7 @@
     <eat-comment/>
     <string name="title_activity_help">HelpActivity</string>
     <string name="title_activity_identity_launcher">WelCome</string>
+    <string name="title_activity_party_details">PartyDetails</string>
     <string name="title_activity_time_table">TimeTable</string>
     <string name="title_activity_view_grades">ViewGrades</string>
     <string name="welcome">Please Connect with your Day at Dal app to See your Personalized Information</string>

@@ -71,9 +71,8 @@ public class IdentityLauncher extends Activity implements OnClickListener,
         StrictMode.setThreadPolicy(policy);
 
         tv = (TextView) findViewById(R.id.idtext);
-        //	String data = getIntent().getExtras().getString("Ram");
-
-        tv.setText("B00675218");
+        String data = getIntent().getExtras().getString("Ram");
+        tv.setText(data);
 
         cv = (ImageView) findViewById(R.id.indeximg);
         cv.setOnClickListener(this);
@@ -95,7 +94,7 @@ public class IdentityLauncher extends Activity implements OnClickListener,
 
 
         values = new String[]{"Time Table", "View Grades",
-                "Personalized News Feed", "Personalized Event", "Party @ Dal",
+                "Personalized News Feed", "Personalized Event","Academic Events","Party @ Dal",
                 "Help", "Maps", "Faculty", "Logout"};
 
         // imageId contain the list of images that need to mapped with the values
@@ -104,6 +103,7 @@ public class IdentityLauncher extends Activity implements OnClickListener,
                 R.drawable.student,
                 R.drawable.news,
                 R.drawable.student,
+                R.drawable.ic_launcher,
                 R.drawable.beer,
                 R.drawable.cloud,
                 R.drawable.help,
@@ -203,18 +203,22 @@ public class IdentityLauncher extends Activity implements OnClickListener,
                 startActivity(i);
                 break;
             case 6:
-                i = new Intent(getApplicationContext(), HelpActivity.class);
+                i = new Intent(getApplicationContext(), PartyDetails.class);
                 startActivity(i);
                 break;
             case 7:
-                i = new Intent(this, MapView.class);
+                i = new Intent(getApplicationContext(), HelpActivity.class);
                 startActivity(i);
                 break;
             case 8:
-                i = new Intent(getApplicationContext(), FacultyInformation.class);
+                i = new Intent(this, MapView.class);
                 startActivity(i);
                 break;
             case 9:
+                i = new Intent(getApplicationContext(), FacultyInformation.class);
+                startActivity(i);
+                break;
+            case 10:
                 finish();
                 i = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(i);

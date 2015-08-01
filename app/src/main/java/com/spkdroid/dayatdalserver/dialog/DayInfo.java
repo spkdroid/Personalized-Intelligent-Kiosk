@@ -60,18 +60,12 @@ public class DayInfo extends  Activity implements OnItemClickListener {
 	public File file;
 	public ProgressBar progressBarSearch;
 	
-	//http://www.spkdroid.com/merlin/fetchevent.php?dal_id=B00675218&dal_date=2015-03-28
-	  
-//	private static final String TAG_CONTACTS = "data";
 	private static final String TAG_ID = "dal_id";
 	private static final String TAG_NAME = "event_name";
 	private static final String TAG_EMAIL = "event_date";
 	private static final String TAG_SIZE="event_msg";
 	private static final String TAG_DURATION="event_time";
-//	private static final String TAG_DESC="event_desc";
-//	private static final String TAG_LOCATION="event_location";
-	
-	
+
 	private static final String URL_LIST="url_list"; 
 	private static final String URL_TAG="url";
 	
@@ -136,41 +130,23 @@ public class DayInfo extends  Activity implements OnItemClickListener {
 				try {
 					JSONArray jr = new JSONArray(jsonStr);
 					// Getting JSON Array node
-			//		contacts = jsonObj.getJSONArray(TAG_CONTACTS);
 
-					// looping through All Contacts
-					for (int i = 0; i<=(jr.length()-1); i++) 
+					for (int i = 0; i<=(jr.length()-1); i++)
 					{
 						JSONObject jsonObj=new JSONObject();
 						jsonObj=jr.getJSONObject(i);
-					//	JSONObject c = contacts.getJSONObject(i);
 						String id = jsonObj.getString(TAG_ID);
 						String name = jsonObj.getString(TAG_NAME);
 						String email = jsonObj.getString(TAG_EMAIL);
 						DURATION=jsonObj.getString(TAG_DURATION);
-				//		String location=jsonObj.getString(TAG_LOCATION);
-				//		String description=jsonObj.getString(TAG_DESC);
 						String time=jsonObj.getString(TAG_SIZE);
-						
-				//		download_url=c.getJSONArray(URL_LIST);
-				
-					//		JSONObject d = download_url.getJSONObject(0);
-					//		RMI=d.getString(URL_TAG);
-					//		SIZE=d.getString(URL_SIZE);
-						
-				
 						// tmp hashmap for single contact
 						HashMap<String, String> contact = new HashMap<String, String>();
-
 						// adding each child node to HashMap key => value
 						contact.put(TAG_ID, id);
 						contact.put(TAG_NAME, name);
 						contact.put(TAG_EMAIL, email);
-						//contact.put(TAG_SIZE, SIZE);
 						contact.put(TAG_DURATION,DURATION);
-				        // adding contact to contact list
-			//			contact.put(TAG_LOCATION, location);
-			//			contact.put(TAG_DESC, description);
 		                contact.put(TAG_SIZE,time);
 						contactList.add(contact);
 					}
@@ -205,41 +181,14 @@ public class DayInfo extends  Activity implements OnItemClickListener {
 	public void onItemClick(AdapterView<?> parent, View view, int position,
 			long id) {
 		// TODO Auto-generated method stub
-		/*
-		 * 
-		 * private static final String TAG_CONTACTS = "data";
-	private static final String TAG_ID = "event_id";
-	private static final String TAG_NAME = "event_name";
-	private static final String TAG_EMAIL = "event_school";
-	private static final String TAG_SIZE="event_time";
-	private static final String TAG_DURATION="event_date";
-	private static final String TAG_DESC="event_desc";
-	private static final String TAG_LOCATION="event_location";
-		 * 
-		 *  TAG_EMAIL,TAG_NAME,TAG_ID,TAG_DURATION,TAG_LOCATION,TAG_DESC,TAG_SIZE}, 
-new int[] { R.id.email,R.id.name,R.id.size,R.id.duration,R.id.location,R.id.description,R.id.time}
-		 * 
-		 * 
-		 */
-		
-		
-		
+
 		String name = ((TextView) view.findViewById(R.id.name)).getText().toString();
 		String date = ((TextView) view.findViewById(R.id.duration)).getText().toString();
 		String type = ((TextView) view.findViewById(R.id.location)).getText().toString();
 		String time = ((TextView) view.findViewById(R.id.time)).getText().toString();
 		String summary = ((TextView) view.findViewById(R.id.description)).getText().toString();
         String event_id=((TextView) view.findViewById(R.id.email)).getText().toString();
-	
-        /*
-        Toast.makeText(getActivity(),name,Toast.LENGTH_LONG).show();
-        Toast.makeText(getActivity(),date,Toast.LENGTH_LONG).show();
-        Toast.makeText(getActivity(),type,Toast.LENGTH_LONG).show();
-        Toast.makeText(getActivity(),time,Toast.LENGTH_LONG).show();
-        Toast.makeText(getActivity(),summary,Toast.LENGTH_LONG).show();
-        Toast.makeText(getActivity(),event_id,Toast.LENGTH_LONG).show();
-        */
-        
+
         new AlertDialog.Builder(this)
         .setIcon(R.drawable.ic_launcher)
         .setTitle(name)
@@ -256,8 +205,6 @@ new int[] { R.id.email,R.id.name,R.id.size,R.id.duration,R.id.location,R.id.desc
                 }
             }
         ).show();
-        
-        
 	}
 	
 	

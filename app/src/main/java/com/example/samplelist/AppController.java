@@ -7,7 +7,16 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
- 
+
+/**
+ *
+ * File Name : AppController
+ *
+ * This class file is used to fetch the image from the server and store it in a queue
+ *
+ *
+ */
+
 public class AppController extends Application {
  
     public static final String TAG = AppController.class.getSimpleName();

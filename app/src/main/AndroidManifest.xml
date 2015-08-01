@@ -4,11 +4,16 @@
     android:versionCode="1"
     android:versionName="1.0" >
 
-    <uses-sdk android:minSdkVersion="14"/>
+    <uses-sdk android:minSdkVersion="14" />
+
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:name="com.example.samplelist.AppController"
@@ -23,21 +28,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
         <activity
             android:name="com.spkdroid.bridge.check.LoginAuth"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
-                </intent-filter>
+            </intent-filter>
         </activity>
         <activity
             android:name=".IdentityLauncher"
             android:label="@string/title_activity_identity_launcher" >
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
-                </intent-filter>
+            </intent-filter>
         </activity>
         <activity
             android:name=".TimeTable"
@@ -81,21 +85,21 @@
             android:name="com.spkdroid.maps.MapView"
             android:label="@string/title_activity_help" >
         </activity>
-       
-         <activity
+        <activity
             android:name="com.spkdroid.faculty.FacultyInformation"
             android:label="@string/title_activity_help" >
         </activity>
-       
-        
-         <activity
+        <activity
             android:name=".HelpActivity"
             android:label="@string/title_activity_help" >
         </activity>
-        
         <activity
             android:name="com.spkdroid.newsfeed.bridge.Newsbridge"
             android:label="@string/title_activity_help" >
+        </activity>
+        <activity
+            android:name=".PartyDetails"
+            android:label="@string/title_activity_party_details" >
         </activity>
     </application>
 </manifest>
