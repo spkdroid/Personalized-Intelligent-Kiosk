@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * This is simple bean class that is used to get the information that need to be shown in the news feed.
  */
 
-public class Movie {
+public class  Movie {
     private String title, thumbnailUrl;
     private String year;
     private String rating;

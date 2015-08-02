@@ -50,6 +50,11 @@ import com.spkdroid.dayatdalserver.R;
  * This is a library file that is used to show the ripple effect in the screen
  *
  *
+ *  if you want to configure the ripple effect please
+ *
+ *  configure the variable in the class.
+ *
+ *
  *
  */
 

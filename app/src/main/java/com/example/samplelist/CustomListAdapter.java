@@ -28,6 +28,10 @@ import com.spkdroid.dayatdalserver.R;
  *
  * the blueprint of the list item.
  *
+ *  The news feed news item has been encrypted as title,rating,genre,url
+ *
+ *
+ *
  *
  *
  */
